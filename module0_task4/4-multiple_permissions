@@ -1,0 +1,4 @@
+#!/bin/sh
+
+touch hello
+chmod 754 hello
