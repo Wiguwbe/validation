@@ -1,4 +1,2 @@
 
-N=$(whoami)
-
-test "$N" = "root" && cd /root || cd  /home/${N}
+test `whoami` = "root" && cd /root || cd  /home/`whoami`
