@@ -2,7 +2,7 @@
 
 # main targets
 
-build: awesome-api lint	## build the application
+build: awesome-api	## build the application
 
 run: awesome-api	## run the application
 	./awesome-api >>./awesome.log 2>&1 &
@@ -25,5 +25,5 @@ lint:	## run the linter
 
 # inter
 
-awesome-api: main.go
+awesome-api: main.go lint
 	go build
