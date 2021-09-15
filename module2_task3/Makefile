@@ -13,9 +13,9 @@ stop:	## stop the running application
 clean: stop	## clean build environment
 	rm awesome-api awesome.log || true
 
-test:	## test the application
-	curl http://localhost:9999
-	curl http://localhost:9999/health
+test: unit-tests integration-tests	## test the application
+	#curl http://localhost:9999
+	#curl http://localhost:9999/health
 
 help:	## show this help message
 	# needs extra '$' to avoid substitution
@@ -26,6 +26,9 @@ lint:	## run the linter
 
 unit-tests:		## run unit tests
 	@go test -v -short -coverprofile=coverage-units.out
+
+integration-tests:	## run the integration tests
+	@go test -v -tags=integration -coverprofile=coverage-integrations.out
 
 # inter
 
