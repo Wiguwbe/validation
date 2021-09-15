@@ -1,0 +1,7 @@
+#!/bin/sh
+
+T=""
+
+while $T != "0000000000"; do
+	echo DevOps
+done
