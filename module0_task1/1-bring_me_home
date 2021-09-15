@@ -1,2 +1,4 @@
 
-cd $(cat /etc/passwd | grep $(id -u) | cut -f6 -d:)
+N=$(whoami)
+
+test "$N" = "root" && cd /root || cd  /home/${N}
