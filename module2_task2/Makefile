@@ -14,6 +14,7 @@ clean: stop	## clean build environment
 	rm awesome-api awesome.log || true
 
 test:	## test the application
+	curl http://localhost:9999
 	curl http://localhost:9999/health
 
 help:	## show this help message
@@ -23,7 +24,7 @@ help:	## show this help message
 lint:	## run the linter
 	golangci-lint run
 
-unit-tests:	## run the unit tests
+unit-tests:
 	@go test -v -short -coverprofile=coverage-units.out
 
 # inter
