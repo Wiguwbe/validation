@@ -7,8 +7,8 @@
 
 ## Lifecycle
 
-1. Build
-2. Run
-3. Test
-4. Stop
-5. Clean
+1. build
+2. run
+3. test
+4. stop
+5. clean

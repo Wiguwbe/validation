@@ -10,7 +10,7 @@ run: awesome-api	## run the application
 stop:	## stop the running application
 	@kill "$(shell pgrep awesome-api)" 2>/dev/null && echo "killed" || echo "not running"
 
-clean:	## clean build environment
+clean: stop	## clean build environment
 	rm awesome-api awesome.log
 
 test:	## test the application
