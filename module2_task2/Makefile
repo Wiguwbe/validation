@@ -24,7 +24,7 @@ help:	## show this help message
 lint:	## run the linter
 	golangci-lint run
 
-unit-tests:
+unit-tests:		## run unit tests
 	@go test -v -short -coverprofile=coverage-units.out
 
 # inter
