@@ -16,7 +16,7 @@ clean: stop	## clean build environment
 test:	## test the application
 	curl http://localhost:9999/health
 
-help:
+help:	## show this help message
 	# needs extra '$' to avoid substitution
 	@grep -E '^[a-z].*:.*##.*' Makefile | sed -E 's/^(.*?:).*?## *([a-zA-Z].*)$$/\1 \2/'
 
