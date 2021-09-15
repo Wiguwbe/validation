@@ -1,2 +1,5 @@
+#!/bin/sh
 
-test `whoami` = "root" && cd /root || cd  /home/`whoami`
+#test `whoami` = "root" && cd /root || cd  /home/`whoami`
+
+cd
