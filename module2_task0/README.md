@@ -12,3 +12,5 @@
 3. test
 4. stop
 5. clean
+# and for some reason
+6. help
