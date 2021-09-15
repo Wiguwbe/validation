@@ -5,7 +5,7 @@
 apt update && apt install -y make curl
 
 # install Hugo from upstream
-curl 'https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_extended_0.80.0_Linux-64bit.tar.gz' -o /tmp/hugo.tar.gz
+curl -L 'https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_extended_0.80.0_Linux-64bit.tar.gz' -o /tmp/hugo.tar.gz
 
 DWD=$(pwd)
 cd /usr/bin
