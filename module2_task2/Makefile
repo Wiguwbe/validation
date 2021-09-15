@@ -23,6 +23,9 @@ help:	## show this help message
 lint:	## run the linter
 	golangci-lint run
 
+unit-tests:	## run the unit tests
+	go test -v -short -coverprofile=coverage-units.out
+
 # inter
 
 awesome-api: main.go lint
