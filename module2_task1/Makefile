@@ -11,7 +11,7 @@ stop:	## stop the running application
 	@kill "$(shell pgrep awesome-api)" 2>/dev/null && echo "killed" || echo "not running"
 
 clean: stop	## clean build environment
-	rm awesome-api awesome.log
+	rm awesome-api awesome.log || true
 
 test:	## test the application
 	curl http://localhost:9999/health
