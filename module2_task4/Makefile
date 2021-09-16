@@ -11,12 +11,12 @@ post:		## Create a new post
 	sed -i "s/${POST_NAME}/${POST_TITLE}/i" content/posts/${POST_NAME}.md
 
 check:		## lint markdown
-	@markdownlint ./content/posts/welcome.md
+	markdownlint ./content/posts/welcome.md
 #	@for mdfile in content/posts/*.md; do markdown-link-check $${mdfile}; done
-	@markdown-link-check ./content/posts/welcome.md
+	markdown-link-check ./content/posts/welcome.md
 
 validate:	## validate HTML dist/index.html
-	python3 w3c_validator.py ./dist/index.html 2>&1 || true
+	./w3c_validator.py ./dist/index.html 2>&1 || true
 
 help:		## Display this help message
 	@grep '^[a-z].*##' Makefile | tr -s '\t' ' ' | sed 's/## *//'
