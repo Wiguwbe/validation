@@ -11,3 +11,5 @@
 - clean: clean built files
 - post: create a new post
 - help: display help message
+- check
+- validate
