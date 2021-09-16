@@ -1,0 +1,13 @@
+mode: set
+github.com/Wiguwbe/awesome-api/main.go:15.13,17.44 2 0
+github.com/Wiguwbe/awesome-api/main.go:20.3,23.58 2 0
+github.com/Wiguwbe/awesome-api/main.go:17.44,19.4 1 0
+github.com/Wiguwbe/awesome-api/main.go:26.32,36.2 4 0
+github.com/Wiguwbe/awesome-api/main.go:38.65,46.2 2 0
+github.com/Wiguwbe/awesome-api/main.go:48.59,56.26 4 1
+github.com/Wiguwbe/awesome-api/main.go:69.3,69.17 1 1
+github.com/Wiguwbe/awesome-api/main.go:74.3,77.57 2 1
+github.com/Wiguwbe/awesome-api/main.go:57.10,59.14 1 1
+github.com/Wiguwbe/awesome-api/main.go:60.10,62.25 1 1
+github.com/Wiguwbe/awesome-api/main.go:63.11,65.41 1 1
+github.com/Wiguwbe/awesome-api/main.go:69.17,71.4 1 1
