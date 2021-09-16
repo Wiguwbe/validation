@@ -12,6 +12,7 @@ stop:	## stop the running application
 
 clean: stop	## clean build environment
 	rm awesome-api awesome.log || true
+	rm coverage*.out || true
 
 test: unit-tests integration-tests	## test the application
 
