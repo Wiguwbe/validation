@@ -30,7 +30,6 @@ func Test_HelloHandler(t *testing.T) {
       responseCode: 200,
       body:         "Hello Rosalind Franklin!",
     },
-    // INSERT MORE TESTS HERE
     {
       name: "Dred maluco",
       queryString: "name=Dred maluco",
