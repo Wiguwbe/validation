@@ -6,7 +6,7 @@
 - Make
 - MarkdownLint-CLI (npm istall markdownlint-cli)
 - Markdown-link-check (npm install markdown-link-check)
-
+- W3C validator (bundled)
 
 ## Lifecycle
 
