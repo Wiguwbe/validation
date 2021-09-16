@@ -14,7 +14,7 @@ check:		## lint markdown
 	@markdownlint content/posts
 	@for mdfile in content/posts/*.md; do markdown-link-check $${mdfile}; done
 
-validate:	## validate HTML
+validate:	## validate HTML dist/index.html
 	python3 w3c_validator.py ./dist/index.html 2>&1 || true
 
 help:		## Display this help message
