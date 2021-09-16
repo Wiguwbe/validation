@@ -1,14 +1,14 @@
 
 
 build:		## Build the project
-#	hugo
+	hugo
 
 clean:		## Clean the dist folder
-#	rm -rf dist
+	rm -rf ./dist
 
 post:		## Create a new post
-#	hugo new posts/${POST_NAME}.md
-#	sed -i "s/${POST_NAME}/${POST_TITLE}/i" content/posts/${POST_NAME}.md
+	hugo new posts/${POST_NAME}.md
+	sed -i "s/${POST_NAME}/${POST_TITLE}/i" content/posts/${POST_NAME}.md
 
 check:		## lint markdown
 	@markdownlint ./content/posts/welcome.md
