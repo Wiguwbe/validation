@@ -16,7 +16,7 @@ check:		## lint markdown
 	markdown-link-check ./content/posts/welcome.md
 
 validate:	## validate HTML dist/index.html
-	./w3c_validator.py ./dist/index.html 2>&1 || true
+	w3c_validator.py ./dist/index.html 2>&1 || true
 
 help:		## Display this help message
 	@grep '^[a-z].*##' Makefile | tr -s '\t' ' ' | sed 's/## *//'
