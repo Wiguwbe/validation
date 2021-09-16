@@ -4,6 +4,7 @@
 
 - Golang
 - Make
+- Golangci-lint
 
 ## Lifecycle
 
@@ -14,3 +15,4 @@
 5. clean
 # and for some reason
 6. help
+7. lint
