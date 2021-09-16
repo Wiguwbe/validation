@@ -4,8 +4,7 @@ build:		## Build the project
 	hugo
 
 clean:		## Clean the dist folder
-	rm -r dist
-	hugo
+#	rm -r dist
 
 post:		## Create a new post
 	hugo new posts/${POST_NAME}.md
