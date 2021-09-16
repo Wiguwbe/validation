@@ -12,7 +12,7 @@ post:		## Create a new post
 
 check:		## lint markdown
 	markdownlint ./content/posts
-	markdown-link-check -q ./content/posts/welcome.md
+	for md in ./content/posts/*.md; do markdown-link-check -q $${md}; done
 
 validate:	## validate html files
 	./w3c_validator.py ./dist/index.html 2>&1 || true
