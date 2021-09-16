@@ -17,3 +17,4 @@
 6. help
 7. lint
 8. unit-tests
+9. integration-tests

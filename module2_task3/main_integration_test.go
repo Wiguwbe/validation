@@ -27,10 +27,28 @@ func Test_server(t *testing.T) {
       body:         "404 page not found\n",
     },
     {
-      name:         "Health page",
+      name:         "Hello name",
       URI:          "/hello?name=Holberton",
       responseCode: 200,
       body:         "Hello Holberton!",
+    },
+    {
+      name:         "Hello there",
+      URI:          "/hello",
+      responseCode: 200,
+      body:         "Hello there!",
+    },
+    {
+      name:         "Hello multiple",
+      URI:          "/hello?name=dred&name=Tiago",
+      responseCode: 200,
+      body:         "Hello Tiago!",
+    },
+    {
+      name:         "Health Page",
+      URI:          "/health",
+      responseCode: 200,
+      body:         "ALIVE",
     },
   }
 
