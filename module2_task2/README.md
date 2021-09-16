@@ -16,3 +16,4 @@
 # and for some reason
 6. help
 7. lint
+8. unit-tests
