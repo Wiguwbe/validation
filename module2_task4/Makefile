@@ -1,18 +1,19 @@
 
 
 build:		## Build the project
-	hugo
+#	hugo
 
 clean:		## Clean the dist folder
 #	rm -rf dist
 
 post:		## Create a new post
-	hugo new posts/${POST_NAME}.md
-	sed -i "s/${POST_NAME}/${POST_TITLE}/i" content/posts/${POST_NAME}.md
+#	hugo new posts/${POST_NAME}.md
+#	sed -i "s/${POST_NAME}/${POST_TITLE}/i" content/posts/${POST_NAME}.md
 
 check:		## lint markdown
-	@markdownlint content/posts
-	@for mdfile in content/posts/*.md; do markdown-link-check $${mdfile}; done
+	@markdownlint ./content/posts/welcome.md
+#	@for mdfile in content/posts/*.md; do markdown-link-check $${mdfile}; done
+	@markdown-link-check ./content/posts/welcome.md
 
 validate:	## validate HTML dist/index.html
 	python3 w3c_validator.py ./dist/index.html 2>&1 || true
