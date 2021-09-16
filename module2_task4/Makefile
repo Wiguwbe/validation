@@ -11,9 +11,9 @@ post:		## Create a new post
 	sed -i "s/${POST_NAME}/${POST_TITLE}/i" content/posts/${POST_NAME}.md
 
 check:		## lint markdown
-	markdownlint ./content/posts/welcome.md
+	markdownlint ./content/posts/welcome.md 2>&1
 #	@for mdfile in content/posts/*.md; do markdown-link-check $${mdfile}; done
-	markdown-link-check ./content/posts/welcome.md
+	markdown-link-check -q ./content/posts/welcome.md 2>&1
 
 validate:	## validate HTML dist/index.html
 	w3c_validator.py ./dist/index.html 2>&1 || true
