@@ -14,5 +14,5 @@
 - clean: clean built files
 - post: create a new post
 - check:
-- validate:
+- validate: dist/index.html
 - help: display help message
